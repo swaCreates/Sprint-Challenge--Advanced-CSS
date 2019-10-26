@@ -201,6 +201,9 @@ footer {
   margin-bottom: 1%;
   font-size: 3.5rem;
 }
+.home .intro {
+  margin-top: 1%;
+}
 .home .intro h2 {
   padding: 15px;
 }
