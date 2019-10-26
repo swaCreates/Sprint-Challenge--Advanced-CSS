@@ -251,7 +251,7 @@ footer {
     flex-direction: column-reverse;
     align-items: center;
     width: 100%;
-    background: yellow;
+    padding: 3% 3%;
   }
 }
 .home .walk .walk-text {
@@ -260,7 +260,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 100%;
-    background: blue;
+    padding: 0;
   }
 }
 .home .walk .walk-text h3 {
@@ -281,7 +281,7 @@ footer {
 }
 .home .walk .walk-text .btn button:hover {
   background-color: #e0e0e0;
-  color: #22283A;
+  color: #22283a;
   font-weight: bold;
 }
 .home .walk .walk-img {
@@ -290,9 +290,10 @@ footer {
 }
 @media (max-width: 500px) {
   .home .walk .walk-img {
+    margin: 0%;
+    margin-bottom: 5%;
     width: 100%;
     display: flex;
-    background: red;
     align-content: center;
   }
 }
