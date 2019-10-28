@@ -1,8 +1,23 @@
 // Home Content
 
+.header-nav{
+  // background: blue;
+  .col-center-flex();
+  width: 100%;
+
+  .h1{
+    // background: red;
+    margin-bottom: 1%;
+    font-size: 3.5rem;
+    
+  }
+}
+
 .home {
 
   .intro {
+
+    margin-top: 1%;
 
     h2 {
       padding: 15px;
@@ -18,6 +33,18 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @phone{
+      .blast{
+        width: 100%;
+      }
+      .sky{
+        display: none;
+      }
+      .launch{
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -46,8 +73,26 @@
     display: flex;
     justify-content: center;
 
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
+      // justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 3% 3%;
+      // background: yellow;
+    }
+
     .walk-text {
       width: 50%;
+
+      @media @phone{
+        width: 100%;
+        // background: blue;
+        padding: 0;
+        // display: flex;
+        // flex-direction: column;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +103,50 @@
       }
 
       .btn {
-      }
-    }
+
+        button{
+        .bttn(#22283A, white, bold);
+        padding: 3%;
+        border-radius: 10%;
+        font-size: 1.7rem;
+        width: 40%;
+        transition-duration: 0.4s;
+
+        @media @phone{
+          width: 100%;
+          border-radius: 5%;
+        }
+
+        }
+        button:hover{
+          .bttn(#e0e0e0, #22283a, bold);
+        } // button
+      } // .btn
+    } // walk text
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
       
+      @media @phone{
+        margin: 0%;
+        margin-bottom: 5%;
+        width: 100%;
+        display: flex;
+        // background: red;
+        align-content: center;
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
-    }
-  }
+
+        @media @phone{
+          width: 100%;
+        }
+
+      } // img
+    } // walk img
+  } // walk
 }// home
